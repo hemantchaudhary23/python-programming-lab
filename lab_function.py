@@ -1,14 +1,14 @@
-def ArmN(x):
+def ArmN(x):#function for armstrong number
  sum=0
  t=x
- while(t>0):
-  d=t%10
-  sum+=d**3
-  t=t//10
- if sum==x:
-  return'Armstrong Number'
+ while(t>0):#condition statement
+  d=t%10    #extarct last digit
+  sum+=d**3 #adds the cube
+  t=t//10   #removes remaining digits aside
+ if sum==x: #checks sum with initial numbers
+  return'Armstrong Number'#prints if condition is true
  else:
-  return'Not Armstrong Numbr'
-x=int(input())
-print(ArmN(x))
+  return'Not Armstrong Numbr'#prints if condition is false
+x=int(input())#accept number from user
+print(ArmN(x))#prints statement
 
